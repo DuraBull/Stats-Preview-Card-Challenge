@@ -1,0 +1,35 @@
+*, *::before, *::after
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body
+    @include font($font-inter, $font-regular)
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 15px
+    background: $bg-main
+    min-width: 375px
+    max-width: 1440px
+    height: 100vh
+    margin: auto
+h1
+    line-height: 1.3em
+    letter-spacing: 1px
+    font-size: 2.3em
+h1, h2
+    margin-top: 0
+    font-weight: $font-bold
+    color: $white-main
+h2
+    margin-bottom: .4em
+p
+    line-height: 1.8em
+p, h3
+    color: $white-p
+h3
+    @include font($font-lex, $font-regular)
+    font-size: .8em
+    letter-spacing: 1px
+    color: $white-stat
